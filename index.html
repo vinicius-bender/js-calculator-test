@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initia-scale=1.0">
+    <!--Responsividade-->
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <!--Link CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+
+<body>
+
+    <div id="calculator">
+
+        <div id="display">
+            <p id="display-result"></p>
+        </div>
+
+        <div id="buttons">
+            <button class="button operation" onclick="cleanClicked()">AC</button>
+            <button class="button operation" onclick="undoClicked()">&lsaquo;</button>
+            <button class="button operation" onclick="btnClicked(this)">%</button>
+            <button class="button operation" onclick="btnClicked(this)">/</button>
+            <button class="button" onclick="btnClicked(this)">7</button>
+            <button class="button" onclick="btnClicked(this)">8</button>
+            <button class="button" onclick="btnClicked(this)">9</button>
+            <button class="button operation" onclick="btnClicked(this)">*</button>
+            <button class="button" onclick="btnClicked(this)">4</button>
+            <button class="button" onclick="btnClicked(this)">5</button>
+            <button class="button" onclick="btnClicked(this)">6</button>
+            <button class="button operation" onclick="btnClicked(this)">-</button>
+            <button class="button" onclick="btnClicked(this)">1</button>
+            <button class="button"onclick=" btnClicked(this)">2</button>
+            <button class="button" onclick="btnClicked(this)">3</button>
+            <button class="button operation" onclick="btnClicked(this)">+</button>
+            <button class="button" onclick="btnClicked(this)">0</button>
+            <button class="button" onclick="btnClicked(this)">.</button>
+            <button class="button" id="equal" onclick="equalClicked()">=</button>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+
+
+
+</html>
